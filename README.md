@@ -39,6 +39,11 @@ As an alternative, you can also place SPEC CPU 2006 anywhere you like within the
 export SEPC_CPU_2006_PATH='path/to/cpu2006'
 ``` 
 
+5. Checkout to the stable commit for evaluation, which has been shown in the Artifact Appendix.
+```
+git checkout -b aaabbbccc
+```
+
 # Aritifact experiments
 All of our experiments can be done through a [script](statistic.py).
 
