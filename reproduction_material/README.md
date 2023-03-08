@@ -62,4 +62,6 @@ These are the format of these oracles:
   - 6: Generate assembly code and check if the assembly code contains test_str in section section_name, the bug is triggered.
   - 7: Generate assembly code and check if the assembly code contains test_str in the next line after section_name, the bug is triggered.
 - test_str: The string used to detect the presence of the bug.
-- section_name: The name of the section in the disassembly code where the test string is searched for. If section_name starts with "between", it means that the section contains section_start and section_end after "between". The detector checks for the test_str between section_start and section_end.
+- section_name: The name of the section in the disassembly code where the test string is searched for. 
+  If the section_name begins with the word "between" followed by two strings, it indicates that the
+  detector should check the scope between the positions of the two strings in the disassembly code.

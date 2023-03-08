@@ -101,7 +101,7 @@ def table6_overhead():
         result_path = spec_cpu_path + '/result/'
         for parent, dirnames, filenames in os.walk(result_path,  followlinks=True):
             for filename in filenames:
-                # get testing results map from data in cpu2006/spec/result/
+                # get testing results map from data in cpu2006/result/
                 # print(filename)
                 file_path = os.path.join(parent, filename)
                 option_set = get_options(file_path)
@@ -150,7 +150,7 @@ def table6_overhead():
             
             print(tabulate(table_data, headers=table_header, tablefmt='grid'))
         else:
-            print('please do all the 14 tests in cpu2006/spec/result/ to genarate table_6_overhead results')
+            print('please do all the 14 tests in cpu2006/result/ to genarate table_6_overhead results')
             
 
 if __name__ == '__main__':
