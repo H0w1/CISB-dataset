@@ -1,0 +1,121 @@
+Unique bug id,Unique bug name,Occurence,Source,Commit/Bugzilla ID,Year,First appearance,Security impacts,Specific cause
+l-13,UB pointer-offset-overflow,1(linux),linux,beaec533fc2701a28a4d667f67c9f59c6e4e0d13,2017,2017,hang,No-UB assumption
+l-8,UB elimi-shift,1(linux),linux,d50f2ab6f050311dbf7b8f5501b25f0bf64a439b,2012,2012,hang,No-UB assumption
+b-1,UB std func arg assumption,1(gcc),gcc,41946,2009,2009,crash,No-UB assumption
+b-2,UB ret value of builtin func,1(gcc),gcc,89670,2019,2019,crash,No-UB assumption
+l-16,UB nonull ptr assumption,3(linux) 2(gcc),linux,02828845dda5ccf921ab2557c6ca17b6e7fc70e2,2006,2006,crash,No-UB assumption
+l-24,UB nonull ptr assumption,3(linux) 2(gcc),linux,a3ca86aea507904148870946d599e07a340b39bf,2009,2006,crash,No-UB assumption
+b-8,UB nonull ptr assumption,3(linux) 2(gcc),gcc,33629,2007,2006,crash,No-UB assumption
+b-8,UB nonull ptr assumption,3(linux) 2(gcc),gcc,70038,2016,2006,crash,No-UB assumption
+b-3,UB res of strlen(no OOB assumption),1(gcc),gcc,85310,2018,2018,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),llvm,16642,2013,2007,any possibility,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),llvm,22822,2015,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,30475,2007,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),llvm,35057,2017,2007,hang,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,39311,2009,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,46619,2011,2007,any possibility,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),llvm,46710,2020,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,47732,2011,2007,hang,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,48793,2011,2007,any possibility,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,49183,2011,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,49820,2011,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,60527,2014,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,69612,2016,2007,any possibility,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,87123,2018,2007,any possibility,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,98168,2020,2007,crash,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,69533,2016,2007,any possibility,No-UB assumption
+b-9,UB signed int overflow,13(gcc) 4(llvm),gcc,61131,2014,2007,any possibility,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,43242,2010,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,83703,2018,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,50922,2010,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,56463,2011,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,36996,2008,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,45707,2010,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),llvm,12496,2012,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),llvm,12133,2012,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),llvm,10923,2011,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,79025,2017,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,98159,2020,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,37569,2008,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,45884,2010,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,98250,2020,2007,hang,No-UB assumption
+b-10,UB signed int overflow,12(gcc) 3(llvm),gcc,91232,2019,2007,hang,No-UB assumption
+b-11,UB OOB->check removal,3(gcc),gcc,59933,2014,2013,hang,No-UB assumption
+b-11,UB OOB->check removal,3(gcc),gcc,59982,2014,2013,hang,No-UB assumption
+b-11,UB OOB->check removal,3(gcc),gcc,59017,2013,2013,hang,No-UB assumption
+b-12,UB data race->check removal,1(llvm),llvm,16602,2013,2013,hang,No-UB assumption
+b-5,UB ptr sub to 0 assumption,2(gcc) 1(llvm),llvm,16744,2013,2013,crash,No-UB assumption
+b-5,UB ptr sub to 0 assumption,2(gcc) 1(llvm),gcc,90535,2019,2013,crash,No-UB assumption
+b-5,UB ptr sub to 0 assumption,2(gcc) 1(llvm),gcc,99235,2021,2013,crash,No-UB assumption
+b-6,UB modify const var,1((linux) 3(gcc),linux,12051b318bc3ce5b42d6d786191008284b067d83,2019,2009,crash,No-UB assumption
+l-2,UB modify const var,1((linux) 3(gcc),gcc,86092,2018,2009,crash,No-UB assumption
+b-16,UB modify const var,1((linux) 3(gcc),gcc,74751,2016,2009,crash,No-UB assumption
+b-16,UB modify const var,1((linux) 3(gcc),gcc,39504,2009,2009,crash,No-UB assumption
+b-20,implicit UB  dma data race,1(gcc),gcc,33949,2007,2007,crash,No-UB assumption
+b-4,UB ptr-no-wrap assumption,1(gcc) l(llvm),gcc,66090,2015,2015,crash,No-UB assumption
+b-4,UB ptr-no-wrap assumption,1(gcc) l(llvm),llvm,51410,2021,2015,crash,No-UB assumption
+b-13,UB violate strict aliasing,1(gcc),gcc,90267,2019,2019,crash,No-UB assumption
+b-13,UB violate strict aliasing,1(gcc),gcc,102279,2021,2019,crash,No-UB assumption
+b-13,UB violate strict aliasing,1(gcc),gcc,37096,2008,2019,crash,No-UB assumption
+b-13,UB violate strict aliasing,1(gcc),gcc,33374,2007,2019,crash,No-UB assumption
+l-5,UB data race,1(linux),linux,f4519fd9375d310c608f9a47e4f3a0579bc94998,2019,2019,crash,No-UB assumption
+l-40,UB reorder breaks code's atomicity,1(linux),linux,dc5d17a3c39b06aef866afca19245a9cfb533a79,2021,2021,crash,No-UB assumption
+b-26,UB violate strict aliasing->unaligned access,1(llvm) 4(gcc),llvm,34143,2017,2017,crash,No-UB assumption
+b-26,UB violate strict aliasing->unaligned access,1(llvm) 4(gcc),gcc,99207,2021,2017,crash,No-UB assumption
+b-26,UB violate strict aliasing->unaligned access,1(llvm) 4(gcc),gcc,82820,2017,2017,crash,No-UB assumption
+b-26,UB violate strict aliasing->unaligned access,1(llvm) 4(gcc),gcc,53016,2012,2017,crash,No-UB assumption
+b-26,UB violate strict aliasing->unaligned access,1(llvm) 4(gcc),gcc,85616,2018,2017,crash,No-UB assumption
+l-47,UB unaligned access,1(linux),linux,778aaefb8e864fc61f850539ea479554dd4caea1,2021,2021,crash,No-UB assumption
+b-14,UB puts(null),2(gcc),gcc,15574,2004,2004,crash,No-UB assumption
+b-14,UB puts(null),2(gcc),gcc,15685,2004,2004,crash,No-UB assumption
+b-15,UB user define built-in,1(gcc) 1(llvm),llvm,9795,2011,2011,hang(infinite loop),No-UB assumption
+b-15,UB user define built-in,1(gcc) 1(llvm),gcc,63393,2011,2011,hang(infinite loop),No-UB assumption
+l-46,UB race and reorder,1(linux),linux,16f5e707d6f6f7644ff07e583b8f18c3dcc5499f,2020,2020,crash,No-UB assumption
+l-30,UB concurrency access to global between 2 func call (which contains access to same global),2(linux),linux,45a94d7cd45ed991914011919e7d40eb6d2546d1,2009,2009,crash,No-UB assumption
+l-30,UB concurrency access to global between 2 func call (which contains access to same global),2(linux),linux,1186e4e904839955e5d2be94f50e0a363cb5651b,2021,2009,crash,No-UB assumption
+l-48,DB reorder(bpf),1(linux),linux,0f20615d64ee2ad5e2a133a812382d0c4071589b,2021,2021,crash,Default Behavior
+l-20,DB invention of unaligned mem access,1(linux),linux,86c38a31aa7f2dd6e74a262710bf8ebf7455acc5,2010,2010,crash,Default Behavior
+l-44,DB byte-wide->word-wide,1(linux),linux,8c031ba63f8f2a9efc471cb45b2ff18271556544,2017,2017,crash,Default Behavior
+l-15,DB transfer mem load to reg load,1(linux),linux,455bd4c430b0c0a361f38e8658a0d6cb469942b5,2013,2013,crash,Default Behavior
+b-7,DB int promotion,2(gcc),gcc,87060,2018,2018,any possibility,Default Behavior
+b-7,DB int promotion,2(gcc),gcc,87131,2018,2018,any possibility,Default Behavior
+l-19,condItional load->non-condItional load,1(linux),linux,69102311a57d1fd65cdc4002c55c5d551c799044,2014,2014,crash,Default Behavior
+l-38,reorder CPU check,1(linux),linux,067e710b9a982a92cc8294d7fa0f1e924c65bba1,2013,2013,crash,Default Behavior
+b-19,env:inst type,1(gcc),gcc,80999,2017,2017,crash,Environment assumption
+l-43,env:built in replace,1(linux),linux,ede6b6bc43c68ef030f88235e91e85939b8bdb49,2021,2021,crash,Environment assumption
+l-23,env: transfer memcpy to unaligned ldx,1(linux),linux,04ef0f1a0169a14b8e653af1178524ab4390133f,2016,2016,crash,Environment assumption
+l-18,env varient->memcpy->unaligned ldx,1(linux),linux,1bd46782d08b01b73df0085b51ea1021b19b44fd,2015,2015,crash,Environment assumption
+l-41,env: implicit change between 2 same check,1(linux),linux,94f6bac1058fd59a8bd472d18c4b77f220d930b0,2008,2008,any possibility,Environment assumption
+l-35,env: implicit read between 2 stores,1(linux),linux,51bcf092917bfaa88d762879d0bbfe7619e8c16c,2007,2007,crash,Environment assumption
+l-49,store tearing->race,1(linux),linux,9c14791748708d87c4d02ba74eb7e281e141d6e4,2021,2007,may crash,Environment assumption
+l-3,eliminate local variable,1(linux),linux,20b50d79974ea3192e8c3ab7faf4e536e5f14d8f,2018,2018,crash,Environment assumption
+l-21,break atomicity(load tearing),1(linux),linux,9bc4f28af75a91aea0ae383f50b0a430c4509303,2018,2018,crash,Environment assumption
+l-4,data race,2(linux),linux,e91467ecd1ef381377fd327c0ded922835ec52ab,2006,2006,crash,Environment assumption
+l-4,data race,2(linux),linux,b6a9b7f6b1f21735a7456d534dc0e68e61359d2c,2013,2006,crash,Environment assumption
+l-4a,double fetch,1(linux),linux,8135cf8b092723dbfcc611fe6fdcb3a36c9951c5,2015,2015,crash,Environment assumption
+b-21,DSE-memset,12(linux) 1(gcc),gcc,89201,2019,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,fb31690fbac6f4055c1765522752e4746759f5de,2005,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,f3751ad0116fb6881f2c3c957d66a9327f69cefb,2020,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,c55d240003ae253d3057dcf93510c9bd64bb7a09,2016,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,d4c5efdb97773f59a2b711754ca0953f24516739,2014,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,7185ad2672a7d50bc384de0e38d90b75d99f3d82,2014,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,3347acc6fcd4ee71ad18a9ff9d9dac176b517329,2020,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,d4d7ccc834fe2401084e01fb043ad70ac410b19d,2016,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,421d82f5b3e75f94e31875e37d45cdf6a557c120,2014,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,0b053c9518292705736329a8fe20ef4686ffc8e9,2015,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,7829fb09a2b4268b30dd9bc782fa5ebee278b137,2015,2005,info leak,
+l-9,DSE-memset,12(linux) 1(gcc),linux,6ae51ffe5e768d9e25a7f4298e2e7a058472bcc3,2021,2005,info leak,
+l-11,padding copied to user space,6(linux),linux,46538818023e8ea94f656acfa1e38297e2df20e2,2009,2009,info leak,
+l-11,padding copied to user space,6(linux),linux,8a70cefa3037d62e7c0b6068a66675def1a330c9,2015,2009,info leak,
+l-11,padding copied to user space,6(linux),linux,aeb1f39d814b2e21e5e5706a48834bfd553d0059,2017,2009,info leak,
+l-11,padding copied to user space,6(linux),linux,bcbfbd8ec21096027f1ee13ce6c185e8175166f6,2018,2009,info leak,
+l-11,padding copied to user space,6(linux),linux,f729a1b0f8df7091cea3729fc0e414f5326e1163,2019,2009,info leak,
+l-11,padding copied to user space,6(linux),linux,d3d19d6fc5736a798b118971935ce274f7deaa82,2020,2009,info leak,
+l-29,part of union not init,1(linux),linux,a45e92a599e77ee6a850eabdd0141633fde03915,2014,2014,info leak,
+b-22,part of union not init,1(llvm),llvm,24698,2015,2014,info leak,
+l-6,time side channel,3(linux),linux,6bf37e5aa90f18baf5acf4874bca505dd667c37f,2013,2013,info leak,
+l-6,time side channel,3(linux),linux,fe8c8a126806fea4465c43d62a1f9d273a572bf5,2013,2013,info leak,
+l-6,time side channel,3(linux),linux,613317bd212c585c20796c10afe5daaa95d4b0a1,2016,2013,info leak,
+l-37,noop loop for time order(concurrency),2(linux),linux,8690ba446defe2e2b81803756c099d2943dfd5fd,2007,2007,crash,
+l-6,noop loop for time order(concurrency),2(linux),linux,71f0bdcab69ab36b1e939d36063aaf6c4a164ed3,2008,2007,crash,
+l-25,switch jump table,1(linux),linux,a9d57ef15cbe327fe54416dd194ee0ea66ae53a4,2019,2018,info leak,

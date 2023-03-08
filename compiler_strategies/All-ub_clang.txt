@@ -1,0 +1,1 @@
+-O3 -fno-strict-overflow  -fno-delete-null-pointer-checks  -fno-strict-aliasing
