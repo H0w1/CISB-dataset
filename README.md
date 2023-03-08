@@ -29,9 +29,11 @@ For running one of the mitigation evaluation experiments that requires SPEC CPU 
 cd path/to/Dockerfile
 docker build -t cisb_docker .
 ```
+It takes about 3 minutes to finish the build.
+
 4. Once the build is complete, run the following command to start a container:
 ```
-docker run -itd -v /path/to/cpu2006:/cisb_docker/CISB-dataset/spec/cpu2006 --privileged cisb_docker
+docker run -itd -v /path/to/cpu2006:/cisb_docker/CISB-dataset/spec/cpu2006 --name cisb_container --privileged cisb_docker
 ```
 
 As an alternative, you can also place SPEC CPU 2006 anywhere you like within the Docker container. In that case, you will need to set the environment variable before running the experiment in the container.
@@ -39,7 +41,12 @@ As an alternative, you can also place SPEC CPU 2006 anywhere you like within the
 export SEPC_CPU_2006_PATH='path/to/cpu2006'
 ``` 
 
-5. Checkout to the stable commit for evaluation, which has been shown in the Artifact Appendix.
+5. Get into the Docker container:
+```
+docker exec -it cisb_container /bin/bash
+```
+
+6. Checkout to the stable commit for evaluation, which has been shown in the Artifact Appendix.
 ```
 git checkout -b aaabbbccc
 ```
@@ -74,11 +81,11 @@ First, run the script to lauch all the SPEC CPU 2006 tests. It takes 40 hours
 to finish all the tests. 
 **You might need to [set up your SPEC CPU 2006](spec/README.md#setup-for-spec-cpu-2006) before that.**
 ```
-# python3 spec/config/test_all.py
+python3 spec/config/test_all.py
 ```
 Second, run a script to obtain the statistics of the overhead of tested mitigations 
 ```
-# python3 statistic.py -e mitigation-overhead
+python3 statistic.py -e mitigation-overhead
 ```
 The output results should be in line with the data shown in Table 6 of the paper.
 We also provide a [guide](spec/README.md#performance-evaluation-of-compiler-mitigations) 

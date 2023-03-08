@@ -11,4 +11,4 @@ if __name__ == '__main__':
         if err:
             print('Compiler ' + compiler + ' do not exits, run scripr/auto_get_compiler.sh or maybe you should install it manully!')
         else:
-            print('Compiler ' + compiler + ' is installed successful')
+            print('Compiler ' + compiler + ' is installed successfully')

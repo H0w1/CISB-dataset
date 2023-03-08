@@ -38,7 +38,7 @@ single testcase automatically.
 - An example to get the reproduction result of `b-1.c` with gcc and compilation options of strategy
 "All-cisb" in `compiler_strategies/All-cisb_gcc.txt`.
 ```
-# python3 reproduction_tester.py ./test_cases/b-1.c -level O3 -cc gcc -opt ../compiler_strategies/All-cisb_gcc.txt 2> /dev/null
+python3 reproduction_tester.py ./test_cases/b-1.c -level O3 -cc gcc -opt ../compiler_strategies/All-cisb_gcc.txt 2> /dev/null
 ```
 You can create your own config file with the compilation options you want to test and replace `All-cisb_gcc.txt` with the name of your config file when running this test script.
 

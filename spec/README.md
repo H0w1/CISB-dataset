@@ -8,10 +8,10 @@ setted if you follow the [installation guide](../README.md#aritifact-setup).
 
 3. To set up SPEC CPU 2006, please follow the instructions below:
 ```
-# cd path/to/artifact/spec
-# cp -r config cpu2006
-# cd cpu2006
-# source ./shrc
+cd path/to/artifact/spec
+cp -r config cpu2006
+cd cpu2006
+source ./shrc
 ```
 
 # Performance evaluation of compiler mitigations
@@ -19,8 +19,8 @@ To measure the performance overhead of each compiler strategy separately, we
 provide the following script to run SPEC CPU 2006 Benchmark. Here is an example 
 of how to test the performance of gcc with O3 optimization:
 ```
-# cd path/to/artifact/spec
-# bash config/spec.sh gcc_O3.cfg
+cd path/to/artifact/spec
+bash config/spec.sh gcc_O3.cfg
 ```
 You can replace gcc_O3.cfg with the config file name of the compiler strategy 
 you want to test.
@@ -37,7 +37,7 @@ the performance of the compiled binary with chosen compiler options.
 
 We also provide a script to run the tests of all the compiler strategies in on step:
 ```
-# python3 config/test_all.py
+python3 config/test_all.py
 ```
 
 ## SPEC CPU 2006 config files
