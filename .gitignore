@@ -1,0 +1,6 @@
+temp.*
+a.out
+core.*
+*.o
+gcc-4.1.1
+.DS_Store
