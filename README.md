@@ -79,7 +79,7 @@ python3 statistic.py -e mitigation-effectiveness
 strategies using the SPEC CPU 2006 benchmark.
 First, run the script to lauch all the SPEC CPU 2006 tests. It takes 40 hours
 to finish all the tests. 
-**You might need to [set up your SPEC CPU 2006](spec/README.md#setup-for-spec-cpu-2006) before that.**
+**You should [set up your SPEC CPU 2006](spec/README.md#setup-for-spec-cpu-2006) before that.**
 ```
 python3 spec/config/test_all.py
 ```

@@ -40,6 +40,12 @@ We also provide a script to run the tests of all the compiler strategies in on s
 python3 config/test_all.py
 ```
 
+**Expected build errors for C++ benchmarks and `perlbench`.**
+Please note that build errors may occur when attempting to compile C++ benchmarks 
+and `perlbench`. These issues are expected, as we solely focus on C benchmarks 
+and do not include C++ benchmarks for our dataset. Additionally, we found 
+that `perlbench` is incompatible with the modern compilers we tested. 
+
 ## SPEC CPU 2006 config files
 Below is the config file and compiler options used for each compiler strategy we test. 
 The config file can be found in `path/to/artifact/spec`:
