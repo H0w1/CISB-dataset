@@ -34,11 +34,12 @@ def get_options(file_path):
     # read from the testing result file, get the options set of the testing, return it
     with open (file_path, 'r') as f:
         content = f.read()
-        begin = content.find('400.perlbench:')
-    # print(content[begin:].split('\n')[1].split('"')[1])
     pattern = "\"-O.*\""
     search = re.search(pattern, content).span()
     strategy = get_key(content[search[0]:search[1]])
+    if not strategy:
+        # this result file is not one of our 14 strategies in spec/config/
+        return 'others'
     # print(strategy)
     cc = ''
     if 'clang' in content:
@@ -103,10 +104,13 @@ def table6_overhead():
             for filename in filenames:
                 # get testing results map from data in cpu2006/result/
                 # print(filename)
+                if not filename.endswith('ref.txt'):
+                    continue
                 file_path = os.path.join(parent, filename)
                 option_set = get_options(file_path)
                 testing_result = get_testing_map(file_path)
-                table6_data[option_set] = testing_result
+                if option_set != 'others':
+                    table6_data[option_set] = testing_result
         
         for option_set in config_files:
             # check all strategy
