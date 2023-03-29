@@ -1,3 +1,7 @@
+# Overview
+Artifact repository for the Usenix Security '23 paper: 
+Silent Bugs Matter: A Study of Compiler-Introduced Security Bugs.
+
 # CISB-dataset
 A dataset of Compiler-Introduced-Security-bugs (CISB) with reproduction materials.
 These CISBs are manually collected from the GCC/Clang bugzilla and Linux kernel 
@@ -16,7 +20,7 @@ We provide the following reproduction materials:
 
 More details [here](reproduction_material/README.md)
 
-# Aritifact setup
+# Artifact setup
 We provide a [Dockerfile](env/Dockerfile) that automates the setup process for our artifact.
 With this Dockerfile, users can easily download the dataset and evaluation materials, as well as install all the necessary software requirements in one step.
 
@@ -51,7 +55,7 @@ docker exec -it cisb_container /bin/bash
 git checkout -b aaabbbccc
 ```
 
-# Aritifact experiments
+# Artifact experiments
 All of our experiments can be done through a [script](statistic.py).
 
 ## E1: CISB statistics
@@ -105,3 +109,7 @@ python3 statistic.py -e target-cisb
 ```
 2. Check the lists of CISBs we summarized and shown in the script. 
    These bugs should be within the scope of the corresponding prevention work.
+
+# Questionnaire
+An anonymous copy of our online questionnaire can be viewed 
+[here](https://docs.google.com/forms/d/e/1FAIpQLSc1EagB7LyiSfjdg-nl1C4TBrpr5zVN9Z8P3VufBRQKO05_AQ/viewform?usp=sf_link).

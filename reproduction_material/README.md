@@ -16,7 +16,7 @@ gcc-4.1, gcc-4.4, gcc-4.9, gcc-7, gcc-12, clang-12, and clang-14.
 To help with installation, we provide our own [script](../env/auto_get_compiler.sh) 
 that installs these compilers
    ```
-cd path/to/aritifact/env
+cd path/to/artifact/env
 chomod +x auto_get_compiler.sh
 sudo auto_get_compiler.sh
 ```

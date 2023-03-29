@@ -4,7 +4,7 @@
 
 2. After obtaining SPEC CPU2006 Benchmark, it is needed to 
 **place the `cpu2006` folder under the `spec` directory**，which is automatically 
-setted if you follow the [installation guide](../README.md#aritifact-setup).
+setted if you follow the [installation guide](../README.md#artifact-setup).
 
 3. To set up SPEC CPU 2006, please follow the instructions below:
 ```
