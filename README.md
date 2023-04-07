@@ -7,7 +7,7 @@ A dataset of Compiler-Introduced-Security-bugs (CISB) with reproduction material
 These CISBs are manually collected from the GCC/Clang bugzilla and Linux kernel 
 through an empirical study.
 
-See our paper (to appear) for more information on the CISB taxonomy and collection methodology. 
+See our [paper](http://seclab.nju.edu.cn/paper/xu_usenix23.pdf) for more information on the CISB taxonomy and collection methodology. 
 
 Our data is stored in *CISB-dataset/dataset*.
 More details [here](dataset/README.md).
