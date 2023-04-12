@@ -2,6 +2,19 @@
 Artifact repository for the Usenix Security '23 paper: 
 Silent Bugs Matter: A Study of Compiler-Introduced Security Bugs.
 
+Citing our paper:
+```
+@inproceedings {xu2023cisb,
+author = {Jianhao Xu and Kangjie Lu and Zhengjie Du and Zhu Ding and Linke Li and Qiushi Wu and Mathias Payer and Bing Mao},
+title = {Silent Bugs Matter: A Study of Compiler-Introduced Security Bugs},
+booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
+year = {2023},
+address = {ANAHEIM, CA},
+publisher = {USENIX Association},
+month = aug,
+}
+```
+
 # CISB-dataset
 A dataset of Compiler-Introduced-Security-bugs (CISB) with reproduction materials.
 These CISBs are manually collected from the GCC/Clang bugzilla and Linux kernel 
