@@ -51,7 +51,7 @@ b-6,UB modify const var,1((linux) 3(gcc),linux,12051b318bc3ce5b42d6d786191008284
 l-2,UB modify const var,1((linux) 3(gcc),gcc,86092,2018,2009,crash,No-UB assumption
 b-16,UB modify const var,1((linux) 3(gcc),gcc,74751,2016,2009,crash,No-UB assumption
 b-16,UB modify const var,1((linux) 3(gcc),gcc,39504,2009,2009,crash,No-UB assumption
-b-20,implicit UB  dma data race,1(gcc),gcc,33949,2007,2007,crash,No-UB assumption
+b-20,UB  dma data race,1(gcc),gcc,33949,2007,2007,crash,No-UB assumption
 b-4,UB ptr-no-wrap assumption,1(gcc) l(llvm),gcc,66090,2015,2015,crash,No-UB assumption
 b-4,UB ptr-no-wrap assumption,1(gcc) l(llvm),llvm,51410,2021,2015,crash,No-UB assumption
 b-13,UB violate strict aliasing,1(gcc),gcc,90267,2019,2019,crash,No-UB assumption
